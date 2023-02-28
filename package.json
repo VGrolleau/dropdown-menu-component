@@ -3,7 +3,7 @@
   "description": "React dropdown menu component",
   "author": "Virginie G",
   "keywords": ["react", "components", "ui"],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
