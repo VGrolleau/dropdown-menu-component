@@ -1,0 +1,118 @@
+.custom-select {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 85%;
+    position: relative;
+    z-index: 2;
+}
+
+#addressBloc .custom-select {
+    width: 90%;
+}
+
+.custom-select label {
+    margin-bottom: 5px;
+    font-size: .8em;
+}
+
+.choice-button {
+    padding: 2px 5px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    font-size: .8em;
+}
+
+#addressBloc .choice-button {
+    border: none;
+}
+
+.custom-select.open label {
+    color: rgb(90, 111, 8);
+}
+
+.custom-select .choice-button.open {
+    background-color: rgba(147, 173, 24, .2);
+    border: 1px solid rgb(147, 173, 24);
+    box-shadow: 0 0 10px rgb(90, 111, 8);
+}
+
+#addressBloc .custom-select .choice-button.open {
+    background-color: rgba(255,255,255, .7);
+}
+
+.list-item {
+    width: 100%;
+    text-indent: 10px;
+    list-style: none;
+}
+
+.list-item:hover {
+    background-color: rgba(90, 111, 8, .25);
+}
+
+.dropdown-list {
+    padding: 5px 0;
+    position: absolute;
+    top: 5px;
+    width: calc(100% - 2px);
+    max-height: 80px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    border: solid 1px gray;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    pointer-events: all;
+    transform: translateY(20px);
+    font-size: .8em;
+}
+
+.choice-button.open .select-arrow {
+    transform: rotate(-180deg);
+    transition: transform .5s ease-in-out;
+}
+
+.select-arrow {
+    transition: transform .5s ease-in-out;
+}
+
+/* For devices with width between 769px and 1279px, like landscape tablets and laptops */
+@media only screen and (min-width: 769px) {
+    .custom-select {
+        width: 70%;
+    }
+    #addressBloc .custom-select {
+        width: 75%;
+    }
+    .custom-select label {
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+    .choice-button {
+        padding: 5px 10px;
+        font-size: 1em;
+    }
+    .dropdown-list {
+        top: 20px;
+        max-height: 100px;
+        font-size: 1em;
+    }
+} 
+
+/* For devices with width of 1280px and more, like desktop computers */
+@media only screen and (min-width: 1280px) {
+    .custom-select {
+        width: 45%;
+    }
+    #addressBloc .custom-select {
+        width: 60%;
+    }
+}
