@@ -50,28 +50,28 @@ function DropdownMenu(props) {
   };
   const wrapperRef = (0, _react.useRef)(null);
   useOutsideAlert(wrapperRef);
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/_react.React.createElement("div", {
     className: isOpen ? 'custom-select open' : 'custom-select',
     ref: wrapperRef
-  }, /*#__PURE__*/React.createElement("label", {
+  }, /*#__PURE__*/_react.React.createElement("label", {
     htmlFor: id
-  }, label), /*#__PURE__*/React.createElement("div", {
+  }, label), /*#__PURE__*/_react.React.createElement("div", {
     className: isOpen ? 'choice-button open' : 'choice-button',
     id: "choice-button-".concat(id),
     onClick: () => toggling()
-  }, /*#__PURE__*/React.createElement("span", {
+  }, /*#__PURE__*/_react.React.createElement("span", {
     id: id
-  }, selectedOption || defaultOption), /*#__PURE__*/React.createElement("span", {
+  }, selectedOption || defaultOption), /*#__PURE__*/_react.React.createElement("span", {
     className: "fa-solid fa-angle-down select-arrow"
-  })), isOpen && /*#__PURE__*/React.createElement("ul", {
+  })), isOpen && /*#__PURE__*/_react.React.createElement("ul", {
     className: "dropdown-list"
   }, dataOptions.map((dataOption, index) => {
-    return /*#__PURE__*/React.createElement("li", {
+    return /*#__PURE__*/_react.React.createElement("li", {
       className: "list-item",
       onClick: () => onOptionClicked(dataOption.name, dataOption.abbreviation),
       key: index
     }, dataOption.name);
-  })), /*#__PURE__*/React.createElement("p", {
+  })), /*#__PURE__*/_react.React.createElement("p", {
     className: "error-text"
   }, error));
 }
