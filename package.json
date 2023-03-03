@@ -5,7 +5,8 @@
   "keywords": ["react", "components", "ui"],
   "version": "1.0.3",
   "private": false,
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "files": [ "dist", "README.md" ],
   "repository": {
       "type": "git",
