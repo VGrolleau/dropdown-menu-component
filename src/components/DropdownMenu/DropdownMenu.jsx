@@ -1,6 +1,6 @@
 import { PropTypes } from 'prop-types';
 import { useEffect, useRef, useState } from 'react';
-import './style/DropdownMenu.css';
+import './DropdownMenu.css';
 
 function DropdownMenu(props) {
     const { id, label, dataOptions, error, onUpdate } = props;

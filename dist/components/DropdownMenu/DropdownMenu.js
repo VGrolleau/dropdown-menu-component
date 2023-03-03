@@ -7,7 +7,7 @@ exports.default = void 0;
 require("core-js/modules/web.dom-collections.iterator.js");
 var _propTypes = require("prop-types");
 var _react = require("react");
-require("./style/DropdownMenu.css");
+require("./DropdownMenu.css");
 function DropdownMenu(props) {
   const {
     id,
