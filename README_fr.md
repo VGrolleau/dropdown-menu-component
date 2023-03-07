@@ -1,49 +1,49 @@
 # React Component
 
-![Author](<https://img.shields.io/badge/Author-Virginie G-initial>)
+![Author](<https://img.shields.io/badge/Auteur-Virginie G-initial>)
 
-React dropdown menu component.
+Composant menu déroulant React.
 
-[French version](README_fr.md)
+[Version anglaise](README.md)
 
 
-## Summary
+## Sommaire
 
-- [Prerequisites](#prerequisites)
-- [Properties](#properties)
+- [Prérequis](#prérequis)
+- [Propriétés](#propriétés)
 - [`dropdown-menu-component`](#dropdown-menu-component)
-- [Example](#example)
+- [Exemple](#exemple)
 
 ---
 
-### Prerequisites
+### Prérequis
 
-- An IDE like `VSCode, Vim, IntelliJ...`
-- [Node.js > v.18](https://nodejs.org/en/)
+- Un EDI comme `VSCode, Vim, IntelliJ...`
+- [Node.js > v.18](https://nodejs.org/fr/)
 - [Git](https://git-scm.com/)
 
 
-### Properties
+### Propriétés
 
-**All properties with a * are required** :
+**Toutes les propriétés avec un * sont requises** :
 
 ### `dropdown-menu-component`
 
-- `id` *: {String} `htmlFor` label and the `id` span that contains selected option
-- `label` *: {String} `label` text content
-- `dataOptions` *: {Array} Options' list array
-- `error` *: {String} Error text when submit form without any choice
-- `onUpdate` *: {Function} Action to do when an option is selected
+- `id` *: {String} Le `htmlFor` du label et l'`id` du span qui contient l'option sélectionnée
+- `label` *: {String} Le texte contenu dans le `label`
+- `dataOptions` *: {Array} Le tableau contenant la liste des options
+- `error` *: {String} Le texte de l'erreur quand on soumet le formulaire sans aucun choix
+- `onUpdate` *: {Function} L'action à effectuer quand une option est sélectionnée
 
 ---
 
-[*to summary*](#summary)
+[*Sommaire*](#Sommaire)
 
 ---
 
-### Example
+### Exemple
 
-We take the example of a US state selector :
+Nous prenon l'exemple d'un sélecteur d'états aux États-Unis :
 
 ```javascript
 import React from "react";
@@ -70,14 +70,14 @@ const MyForm = () => {
             name: "American Samoa",
             abbreviation: "AS"
         },
-        // Add as many states as necessary
+        // Ajouter autant d'états que nécessaire
     ];
 
     const errorText = "Please select a state";
 
     const handleState = (newValue, newAbbreviation) => {
         console.log(newValue, newAbbreviation);
-        // Do what you want with newValue and newAbbreviation
+        // Faites ce que vous voulez avec newValue et NewAbbreviation
     };
 
     return(
@@ -100,6 +100,6 @@ const MyForm = () => {
 
 ---
 
-[*to summary*](#summary)
+[*Sommaire*](#Sommaire)
 
 ---

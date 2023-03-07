@@ -83,7 +83,9 @@ function DropdownMenu(props) {
 DropdownMenu.propTypes = {
   id: _propTypes.default.string,
   label: _propTypes.default.string,
-  dataOptions: _propTypes.default.array
+  dataOptions: _propTypes.default.array,
+  error: _propTypes.default.string,
+  onUpdate: _propTypes.default.func
 };
 var _default = DropdownMenu;
 exports.default = _default;
