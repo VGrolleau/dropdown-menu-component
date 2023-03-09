@@ -4,6 +4,8 @@
 
 React dropdown menu component.
 
+**This is an OpenClassrooms project, not intended to be maintained over time!**
+
 [French version](README_fr.md)
 
 

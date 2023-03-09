@@ -4,6 +4,8 @@
 
 Composant menu déroulant React.
 
+**Ceci est un projet OpenClassrooms, non prévu pour être maintenu dans le temps !**
+
 [Version anglaise](README.md)
 
 
